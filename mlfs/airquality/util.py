@@ -168,6 +168,8 @@ def get_pm25(aqicn_url: str, country: str, city: str, street: str, day: datetime
         aq_today_df = pd.DataFrame()
         aq_today_df['pm25'] = [aqi_data['iaqi'].get('pm25', {}).get('v', None)]
         aq_today_df['pm25'] = aq_today_df['pm25'].astype('float32')
+        aq_today_df['pm10'] = [aqi_data['iaqi'].get('pm10', {}).get('v', None)]
+        aq_today_df['pm10'] = aq_today_df['pm10'].astype('float32')
 
         aq_today_df['country'] = country
         aq_today_df['city'] = city
