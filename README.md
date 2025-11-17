@@ -1,43 +1,14 @@
-# mlfs-book
-O'Reilly book - Building Machine Learning Systems with a feature store: batch, real-time, and LLMs
+# Air Quality Prediction
+Authors: Yuting Cui, Man Zhang - Group 100
 
+## Dashboard
+[Dashboards for Air Quality](https://mint-suga.github.io/mlfs-book/)
 
-## ML System Examples
+## Description
+This project realizes an air quality (PM2.5) prediction in London based on its history weather and air quality. Data sources are from aqicn.org and open-meteo.com.
 
+We use HopsWorks as platform for maintaining feature groups and training models. With the trained model, we predicte the air quality in the future 7 days.
 
-[Dashboards for Example ML Systems](https://featurestorebook.github.io/mlfs-book/)
+A lagged data feature is included with average air quality in the past days. When making predictions for days without a past-3-day history, predicted air quality data for those days will be used instead.
 
-
-# Run Air Quality Tutorial
-
-See [tutorial instructions here](https://docs.google.com/document/d/1YXfM1_rpo1-jM-lYyb1HpbV9EJPN6i1u6h2rhdPduNE/edit?usp=sharing)
-    
-# Create a conda or virtual environment for your project before you install the requirements
-    pip install -r requirements.txt
-
-
-##  Run pipelines with make commands
-
-    make aq-backfill
-    make aq-features
-    make aq-train
-    make aq-inference
-    make aq-clean
-
-or 
-    make aq-all
-
-
-
-## Feldera
-
-
-mkdir -p /tmp/c.app.hopsworks.ai
-ln -s  /tmp/c.app.hopsworks.ai ~/hopsworks
-docker run -p 8080:8080 \
-  -v ~/hopsworks:/tmp/c.app.hopsworks.ai \
-  --tty --rm -it ghcr.io/feldera/pipeline-manager:latest
-
-
-## Introduction to ML
-I wrote a brief introduction to machine learning [here](./introduction_to_supervised_ml.pdf)
+The project also includes two more sensors in central London, Batterseaparkroad and Nineelmslane.

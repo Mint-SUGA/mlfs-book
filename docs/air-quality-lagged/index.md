@@ -1,6 +1,6 @@
-# Single Sensor in London Dashboard
+# Single Sensor in London _ Lagged Dashboard
 
-![Hopsworks Logo](./assets/img/logo.png)
+![Hopsworks Logo](../air-quality/assets/img/logo.png)
 
 ## Model Test Results
 
