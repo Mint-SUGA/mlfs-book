@@ -9,9 +9,3 @@
 ## Model Prediction Results
 
 ![Forecast](./assets/img/predicted.png)
-
-## Model Performance Monitoring
-
-1-Day Hindcast: Predictions vs Outcomes
-
-![Hindcast](./assets/img/pm25_hindcast_1day.png)

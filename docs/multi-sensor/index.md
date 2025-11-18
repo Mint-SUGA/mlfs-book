@@ -22,9 +22,3 @@
 ![Forecast](./assets/img/predicted1.png)
 ![Forecast](./assets/img/predicted2.png)
 ![Forecast](./assets/img/predicted3.png)
-
-## Model Performance Monitoring
-
-1-Day Hindcast: Predictions vs Outcomes
-
-![Hindcast](./assets/img/pm25_hindcast_1day.png)

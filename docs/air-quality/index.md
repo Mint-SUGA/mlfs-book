@@ -14,4 +14,4 @@
 
 1-Day Hindcast: Predictions vs Outcomes
 
-![Hindcast](./assets/img/pm25_hindcast_1day.png)
+![Hindcast](./assets/img/hindcast.png)
