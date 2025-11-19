@@ -22,3 +22,4 @@
 ![Forecast](./assets/img/predicted1.png)
 ![Forecast](./assets/img/predicted2.png)
 ![Forecast](./assets/img/predicted3.png)
+![Forecast](./assets/img/3sensors.png)
